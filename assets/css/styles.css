@@ -1,0 +1,629 @@
+@import url('reset.css');
+@import url('commons.css');
+
+
+/* navi(메뉴) */
+
+ a {
+    text-decoration:none;
+  }
+  #wrap{
+    position: relative;
+    width: 100%;
+  }
+  .header {
+    position: relative;
+    padding: 18px 2%;
+    height: 50px;
+    z-index: 99;
+  }
+  .fixed{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+  
+  .header .logo {
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .header .logo img {
+    width: 50%;
+  }
+  
+  .header .gnb {
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.4);
+  }
+  
+  .header .gnb li a {
+    display: block;
+    padding: 20px 0 20px 10px;
+    font-size: 14px;
+    color: #111;
+  }
+  
+  .header .menu-toggle-btn {
+    float: right;
+    width: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  
+  .header .menu-toggle-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #000;
+  }
+  
+  .header .menu-toggle-btn span:nth-child(2) {
+    margin: 7px 0;
+  }
+
+/* section01 영역 */
+
+.video-area{
+    width: 90%;
+    margin: 0 auto;
+    height: 830px;
+    overflow: hidden;
+    position: relative;
+}
+.video-area .top-video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* section02 */
+.relative{
+    width: 100%;
+    padding: 100px 0 258px;
+    margin: 1000px 0 0;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    z-index: 1002;
+}
+.section02{
+    width: 100%;
+    padding-bottom: 200px;
+    background-color: #fff;
+    /* background: url('../images/hand-painted-watercolor-background.jpg')no-repeat center; */
+    background-size: cover;
+    position: relative;
+}
+
+.products-text{
+    padding: 30px 0;
+}
+.product-main{
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.product-main img{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.product-main img:hover{
+    transform: scale(1.2);
+}
+
+.products-text p{
+    padding: 30px 0 20px;
+}
+/* hover */
+
+.section02-text{
+    text-align: center;
+    padding: 50px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.section02-text ul{
+    position: absolute;
+}
+.section02-text .a , .b, .c, .d{
+    display: none;
+}
+
+
+/* section03 */
+.section03{
+    padding: 90px 0 150px;
+    background: #fff;
+    /* background: url('../images/hand-painted-watercolor-background.jpg') 0 0 no-repeat;
+    background-size: cover; */
+}
+.cf_wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cf_wrap .tit_wrap {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.cf_wrap .tit_wrap .tit{
+    font-size: 50px;
+    letter-spacing: 0.03em;
+    line-height: 2.625rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.cf_wrap .cf_area {
+    position: relative;
+    height: 585px;
+    padding-top: 40px;
+}
+.cf_box .square {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 585px;
+}
+.square .square_inner {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 100px 0;
+    visibility: inherit;
+    opacity: 1;
+    height: 355px;
+}
+.cf_box .square.premium {   
+    transform: matrix(1, 0, 0, 1, 0, 30);
+    margin-left: -1px;
+}
+.square .txt_box {
+    position: absolute;
+    left: 60px;
+    top: 340px;
+    color: #fff;
+}
+.square .square_inner > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.square_inner:hover > img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.square .txt_box .tit {
+    margin-bottom: 15px;
+    font-size: 15px;
+    letter-spacing: -0.03em;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+.tit_wrap .txt {
+    font-size: 15px;
+    letter-spacing: 0em;
+    line-height: 1.375rem;
+    color: #888;
+}
+.more {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 3.75rem;
+    background-color: #00466e;
+}
+.square.premium .txt_box .more {
+    background-color: #b28657;
+}
+
+
+/* section04 */
+.section04{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.t-container{
+    width: 30%;
+}
+.t-container h1{
+    font-weight: 600;
+    font-size: 50px;
+    margin: 30px 0 0 70px;
+    border-bottom: 3px solid #888;
+}
+.t-container p{
+    font-size: 25px;
+}
+/* slick */
+.slider{
+    width: 50%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 18px rgb(0 0 0 / 10%);
+    position: relative;
+    background: #fff;
+}
+.slider img{
+    width: 100%;
+}
+.slider-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.news-text{
+    padding: 10px 30px 30px;
+}
+.slider-bg h1{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+.slider-bg p{
+    font-size: 13px;
+    line-height: 20px;
+}
+.slick-arrow{
+    display: none !important;
+}
+/* section04 bottom */
+.section04_bottom{
+    background: url('../images/bg3.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 167px 0 73px;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.15;
+    margin-top: -100px;
+}
+/* section05 */
+.section05{
+    width: 100%;
+}
+.event_wrap{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.banner .inner{
+    position: relative;
+}
+.banner .txt_box{
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    color: #fff;
+}
+.banner .txt_box .txt{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.event_right{
+    margin-left: 50px;
+}
+.event_wrap .tit_wrap {
+    font-weight: 400;
+    line-height: 1;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    line-height: 2.625rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #00466e;
+}
+.list li a{
+    display: flex;
+    justify-content: space-between;
+}
+.event_wrap .event_list li {
+    border-top: 1px solid #eee;
+}
+.event_wrap .event_list li {
+    padding: 36px 0;
+}
+.event_wrap .event_list {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.event_wrap .event_list .date{
+    color: #d4ccc1;
+    line-height: 1.125rem;
+    display: flex;
+    padding-left: 25px;
+}
+.event_list .date .month{
+    padding-right: 5px;
+}
+
+@media (max-width: 1025px){
+    .video-area {
+        width: 90%;
+        margin: 0 auto;
+        height: 500px;
+    }
+    /* section02 영역 */
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section02-text ul {
+        width: 80%;
+        padding: 50px;
+    }
+    .col-25 h1 {
+        padding: 30px;
+        font-size: 15px;
+    }
+    /* section04 영역 */
+    .section04{
+        flex-wrap: wrap;
+    }
+    .t-container h1 {
+        border-bottom: none;
+        padding-bottom: 50px;
+    }
+    .slider{
+        width: 90%;
+    }
+}
+
+@media (max-width: 769px){
+    .header .gnb li a {
+        color: #fff;
+    }
+    /* section01 영역 */
+
+    .video {
+        width: 768px;
+    }
+
+
+    /* section02 영역 */
+
+    .kanu-title {
+        margin-top: 10px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    .wrap{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .col-25 {
+        width: 50%;
+    }
+    .section02-text ul {
+        width: 80%;
+        padding: 50px;
+    }
+
+    /* section03 영역 */
+
+}
+
+@media (max-width: 541px){
+    .header .logo img {
+        width: 45%;
+    }
+    .header .logo {
+        padding-top: 7px;
+    }
+    /* section01 영역 */
+    .video {
+        width: 540px;
+    }
+    /* section02 영역 */
+    .section02 {
+        padding: 150px 0;
+    }
+    .kanu-title {
+        font-size: 30px;
+    }
+    .wrap {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .col-25 {
+        width: 44%;
+        margin: 10px;
+    }
+    .col-25 h1 {
+        padding: 20px;
+        font-size: 13px;
+    }
+    .section02-text ul {
+        width: 70%;
+    }
+    .section02-text ul li{
+        font-size: 12px;
+    }
+
+    /* section03 영역 */
+
+}
+
+@media (max-width: 415px){
+    .header {
+        padding: 5px 2%;
+    }
+    .header .logo img {
+        width: 35%;
+    }
+    .header .gnb li a {
+        display: block;
+        padding: 12px 0 12px 10px;
+        font-size: 12px;
+    }
+    /* section01 영역 */
+    .video {
+        width: 414px;
+    }
+    /* section02 영역 */
+    .section02 {
+        padding: 100px 0;
+    }
+    .kanu-title {
+        font-size: 25px;
+    } 
+    .col-25 {
+        width: 40%;
+        margin: 10px;
+    }
+    .col-25 h1 {
+        padding: 9px;
+        font-size: 10px;
+    }
+    .section02-text ul {
+        width: 70%;
+        padding-top: 10px;
+    }
+    .section02-text ul li {
+        font-size: 10px;
+    }
+    /* section03 영역 */
+
+}
+
+@media (max-width: 320px){
+    .header .logo {
+        padding-top: 9px;
+    }
+    .header .logo img {
+        width: 30%;
+    }
+    .header .gnb li a {
+        padding: 10px 0 10px 10px;
+        font-size: 10px;
+    }
+     /* section01 영역 */
+    .video {
+        width: 319px;
+    }
+      /* section02 영역 */
+      .section02 {
+        padding: 80px 0;
+    }
+      .kanu-title {
+        font-size: 18px;
+    }
+    .section02-text ul {
+        width: 60%;
+        padding-top: 10px;
+    }
+    /* section03 영역 */
+   
+}
+
+
+  
+  /* 태블릿용 CSS */
+  
+  @media all and (min-width:769px) {
+    .header {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      padding: 0px;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      background: #fff;
+    }
+    .header .logo {
+      padding: 10px 20px;
+      padding-left: 30px;
+    }
+    .header nav {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      margin-right: 0px;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+    }
+    .header .gnb {
+      /* !important 없으면 btn 접었을 시 display:none되어 gnb가 표시되지 않음 */
+      display: grid !important;
+      display: block;
+      justify-content: end;
+      height: 100%;
+      grid-template-columns: 15% 15% 15% 15% 15%;
+      position: static;
+      width: auto;
+      background: none;
+    }
+    .header .gnb li {
+      float: left;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-bottom: 0;
+    }
+    .header .gnb li a {
+      color: #111;
+      padding: 0;
+      font-size: 18px;
+    }
+    .header .menu-toggle-btn {
+      display: none;
+    }
+  }
+  
+  /* 컴퓨터용 CSS */
+  
+  @media all and (min-width:1132px) {
+    .header {
+      grid-template-columns: 20% 80%;
+    }
+    .header .logo {
+      padding: 10px 20px;
+      padding-left: 50px;
+    }
+    .header .gnb li a {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,65 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+body{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 16px;
+}
+a{
+    color: #333;
+}
+section{
+    width: 100%;
+    /* background-color: lightblue; */
+}
+
+/* 글자영역 */
+.kanu-title{
+    font-size: 2rem;
+    font-weight: 300;
+    /* color: red; */
+    margin-top: 60px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+}
+.col-center{
+    justify-content: center;
+}
+.row-center{
+    align-items: center;
+}
+.container{
+    width: 1107px;
+    margin:auto;
+}
+.container_video {
+    width: 1107px;
+    margin: auto;
+}
+.col-25{
+    width: 25%;
+}
+.col-50{
+    width: 50%;
+}
+.col-33{
+    width: 33.33%;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.section02 img{
+    width: 100%;
+}
+
+@media(max-width:767px){
+    .col-25{
+        width: 50%;
+    }
+}
+
