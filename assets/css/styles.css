@@ -53,7 +53,6 @@
     font-size: 14px;
     color: #111;
   }
-  
   .header .menu-toggle-btn {
     float: right;
     width: 30px;
@@ -127,11 +126,14 @@
 .products-text p{
     padding: 30px 0 20px;
 }
+.col-25 h1{
+    padding-top: 10px;
+}
 /* hover */
 
 .section02-text{
     text-align: center;
-    padding: 50px;
+    padding: 150px 0 0 0;
     font-size: 1rem;
     display: flex;
     justify-content: center;
@@ -141,15 +143,13 @@
 }
 .section02-text .a , .b, .c, .d{
     display: none;
+    color: #888;
 }
-
 
 /* section03 */
 .section03{
     padding: 90px 0 150px;
     background: #fff;
-    /* background: url('../images/hand-painted-watercolor-background.jpg') 0 0 no-repeat;
-    background-size: cover; */
 }
 .cf_wrap{
     max-width: 1200px;
@@ -281,7 +281,7 @@
 .slider-bg{
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .news-text{
     padding: 10px 30px 30px;
@@ -394,7 +394,20 @@
         padding: 30px;
         font-size: 15px;
     }
+    /* section03 영역 */
+    .section03 {
+        width: 90%;
+        margin: 0 auto;
+    }
     /* section04 영역 */
+    .t-container[data-aos=fade-right] {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .slider[data-aos=fade-left] {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
     .section04{
         flex-wrap: wrap;
     }
@@ -405,16 +418,39 @@
     .slider{
         width: 90%;
     }
+    /* section05 영역 */
+    .inner img{
+        width: 95%;
+    }
+    .banner .txt_box {
+        left: 0;
+        padding: 20px 0;
+        color: #000;
+    }
+    .banner .txt_box .txt {
+        font-size: 20px;
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 769px){
     .header .gnb li a {
         color: #fff;
     }
+    .header .menu-toggle-btn {
+        padding: 0 30px 0 0;
+    }
+    .fixed{
+        background: #fff;
+    }
     /* section01 영역 */
 
     .video {
         width: 768px;
+    }
+    .video-area .top-video {
+        top: 80px;
     }
 
 
@@ -440,7 +476,33 @@
     }
 
     /* section03 영역 */
-
+    .cf_wrap .tit_wrap .tit {
+        font-size: 40px;
+    }
+    /* section04 영역 */
+    .t-container {
+        width: auto;
+    }
+    .t-container h1 {
+        margin: 0;
+    }
+    /* section05 영역 */
+    .event_wrap {
+        flex-wrap: wrap;
+    }
+    .event_left{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .banner .txt_box {
+        top: 250px;
+        left: 20px;
+        color: #fff;
+    }
+    .event_right {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 541px){
@@ -453,6 +515,9 @@
     /* section01 영역 */
     .video {
         width: 540px;
+    }
+    .video-area {
+        height: 300px;
     }
     /* section02 영역 */
     .section02 {
@@ -481,6 +546,29 @@
     }
 
     /* section03 영역 */
+    .cf_wrap .tit_wrap .tit {
+        font-size: 30px;
+    }
+    .cf_box .square {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    /* section04 영역 */
+    .t-container h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+    /* section05 영역 */
+    .banner .inner {
+        text-align: center;
+    }
+    .list .tit{
+        font-size: 15px;
+    }
+    .banner .txt_box {
+        display: none;
+    }
 
 }
 
@@ -501,6 +589,9 @@
         width: 414px;
     }
     /* section02 영역 */
+    .wrap {
+        width: 100%;
+    }
     .section02 {
         padding: 100px 0;
     }
@@ -523,6 +614,12 @@
         font-size: 10px;
     }
     /* section03 영역 */
+    .cf_wrap .tit_wrap .tit {
+        font-size: 25px;
+    }
+    .tit_wrap .txt {
+        font-size: 13px;
+    }    
 
 }
 
@@ -553,7 +650,20 @@
         padding-top: 10px;
     }
     /* section03 영역 */
-   
+    .cf_wrap .tit_wrap .tit {
+        font-size: 20px;
+    }
+    /* section04 영역 */
+    .t-container h1 {
+        font-size: 20px;
+    }
+    /* section05 영역 */
+    .list .tit {
+        font-size: 13px;
+    }
+    .date .day{
+        font-size: 20px!important;
+    }
 }
 
 

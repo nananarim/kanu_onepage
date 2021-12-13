@@ -1,5 +1,6 @@
 AOS.init();
 
+
 //video scroll
 $(window).scroll(function(){
     var scroll=$(window).scrollTop();
@@ -60,9 +61,15 @@ $('.slider').slick({
     autoplay : true,
     autoplaySpeed : 3000,
     slidesToShow: 2,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [{
+        breakpoint: 541,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
 });
-
 // 스크롤 시 노출 모션
 var controller = new ScrollMagic.Controller();
 

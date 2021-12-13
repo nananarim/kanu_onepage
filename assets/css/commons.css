@@ -14,8 +14,8 @@ section{
 
 /* 글자영역 */
 .kanu-title{
-    font-size: 2rem;
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 50px;
     /* color: red; */
     margin-top: 60px;
 }
